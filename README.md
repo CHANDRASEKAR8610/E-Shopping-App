@@ -435,7 +435,7 @@ Do like the above scenarios for all the other features and explore this applicat
 
 ## 2. Data Model for E-Shopping-App
 At First, let have a look at our Conceptual Data Model !!!
-![Conceptual Data Model]()
+![Conceptual Data Model](https://github.com/CHANDRASEKAR8610/E-Shopping-App/blob/master/images/DM.jpg)
 
 # 3. Reference & Resources
 1. [Datastax Python Driver Docs](https://docs.datastax.com/en/developer/python-driver/3.24/)
