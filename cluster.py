@@ -253,8 +253,8 @@ def sales(userid):
             +'To Buy your Product, Click 10\n'
             +'To Delete all Accounts and flush (Only admins for backing up the data), Click 11\n'          
             +'To Comment on your Product, Click 12\n'
-          +'To View all your comments\n, Click 13\n'
-          +'To View Comments on a Product\n, Click 14\n'
+          +'To View all your comments, Click 13\n'
+          +'To View Comments on a Product, Click 14\n'
           +'To Quit Application, Click 15\n')
 
     choice = int(input('Enter your Choice = '))
