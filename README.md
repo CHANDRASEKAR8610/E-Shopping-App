@@ -6,7 +6,7 @@ Hi ! I'm going to demonstrate my ` E-Shopping-App ` for Astraakathon Submission.
 
 * [Run this application](https://github.com/CHANDRASEKAR8610/E-Shopping-App/blob/master/README.md#1-run-this-application)
 * [Data Model for ` E-Shopping-App `](https://github.com/CHANDRASEKAR8610/E-Shopping-App#2-data-model-for-e-shopping-app)
-* [Reference & Resources](https://github.com/CHANDRASEKAR8610/E-Shopping-App#3-reference--resources)
+* [Reference & Resources](https://github.com/CHANDRASEKAR8610/E-Shopping-App/blob/master/README.md#3-reference--resources)
 
 ## 1. Run this application
 
