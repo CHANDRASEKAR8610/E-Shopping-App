@@ -345,8 +345,11 @@ Dear user, to Navigate to pages follow the below instructions carefully.
 * To Add Product, Click 8
 * To Update your Product, Click 9
 * To Buy your Product, Click 10
-* To Delete your Account, Click 11
-* To Quit Application, Click 12
+* To Delete all Accounts and flush (Only admins for backing up the data), Click 11         
+* To Comment on your Product, Click 12
+* To View all your comments, Click 13
+* To View Comments on a Product, Click 14
+* To Quit Application, Click 15
 
 Enter your Choice = 8
 
@@ -384,8 +387,11 @@ Dear user, to Navigate to pages follow the below instructions carefully.
 * To Add Product, Click 8
 * To Update your Product, Click 9
 * To Buy your Product, Click 10
-* To Delete your Account, Click 11
-* To Quit Application, Click 12
+* To Delete all Accounts and flush (Only admins for backing up the data), Click 11         
+* To Comment on your Product, Click 12
+* To View all your comments, Click 13
+* To View Comments on a Product, Click 14
+* To Quit Application, Click 15
 
 Enter your Choice = 4
 
@@ -407,8 +413,11 @@ Dear user, to Navigate to pages follow the below instructions carefully.
 * To Add Product, Click 8
 * To Update your Product, Click 9
 * To Buy your Product, Click 10
-* To Delete your Account, Click 11
-* To Quit Application, Click 12
+* To Delete all Accounts and flush (Only admins for backing up the data), Click 11         
+* To Comment on your Product, Click 12
+* To View all your comments, Click 13
+* To View Comments on a Product, Click 14
+* To Quit Application, Click 15
 
 Enter your Choice = 5
 
@@ -441,8 +450,11 @@ Dear user, to Navigate to pages follow the below instructions carefully.
 * To Add Product, Click 8
 * To Update your Product, Click 9
 * To Buy your Product, Click 10
-* To Delete your Account, Click 11
-* To Quit Application, Click 12
+* To Delete all Accounts and flush (Only admins for backing up the data), Click 11         
+* To Comment on your Product, Click 12
+* To View all your comments, Click 13
+* To View Comments on a Product, Click 14
+* To Quit Application, Click 15
 
 Enter your Choice = 10
 
