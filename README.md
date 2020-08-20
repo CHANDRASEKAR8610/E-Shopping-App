@@ -98,6 +98,28 @@ CREATE TABLE killrvideo.add_product (
     AND read_repair_chance = 0.0
     AND speculative_retry = '99PERCENTILE';
 
+CREATE TABLE killrvideo.comments (
+    userid uuid,
+    commentid timeuuid,
+    commented_at timestamp,
+    comment text,
+    PRIMARY KEY (userid, commented_at, commentid)
+) WITH CLUSTERING ORDER BY (commented_at DESC, commentid ASC)
+    AND bloom_filter_fp_chance = 0.01
+    AND caching = {'keys': 'ALL', 'rows_per_partition': 'NONE'}
+    AND comment = ''
+    AND compaction = {'class': 'org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy', 'max_threshold': '32', 'min_threshold': '4'}
+    AND compression = {'chunk_length_in_kb': '64', 'class': 'org.apache.cassandra.io.compress.LZ4Compressor'}
+    AND crc_check_chance = 1.0
+    AND dclocal_read_repair_chance = 0.1
+    AND default_time_to_live = 0
+    AND gc_grace_seconds = 864000
+    AND max_index_interval = 2048
+    AND memtable_flush_period_in_ms = 0
+    AND min_index_interval = 128
+    AND read_repair_chance = 0.0
+    AND speculative_retry = '99PERCENTILE';
+
 CREATE TABLE killrvideo.account_type (
     acc_type text,
     transaction_at timestamp,
@@ -127,7 +149,8 @@ CREATE TABLE killrvideo.user_details (
     email text,
     firstname text,
     lastname text,
-    products_purchased set<text>
+    products_purchased set<text>,
+    comments set<text>
 ) WITH bloom_filter_fp_chance = 0.01
     AND caching = {'keys': 'ALL', 'rows_per_partition': 'NONE'}
     AND comment = ''
@@ -144,7 +167,7 @@ CREATE TABLE killrvideo.user_details (
     AND speculative_retry = '99PERCENTILE';
 
 CREATE TABLE killrvideo.product_details (
-    productid timeuuid PRIMARY KEY,
+    productid timeuuid,
     added_at timestamp,
     added_by uuid,
     cost float,
@@ -153,8 +176,11 @@ CREATE TABLE killrvideo.product_details (
     tags set<text>,
     title text,
     isavailable boolean,
-    stockleft int
-) WITH bloom_filter_fp_chance = 0.01
+    stockleft int,
+    comments set<text>,
+    primary key(productid)
+) 
+ WITH bloom_filter_fp_chance = 0.01
     AND caching = {'keys': 'ALL', 'rows_per_partition': 'NONE'}
     AND comment = ''
     AND compaction = {'class': 'org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy', 'max_threshold': '32', 'min_threshold': '4'}
@@ -238,7 +264,7 @@ CREATE TABLE killrvideo.buy_product (
     title text,
     transactionid timeuuid,
     PRIMARY KEY (productid, transaction_at, userid)
-) WITH CLUSTERING ORDER BY (transaction_at ASC, userid ASC)
+) WITH CLUSTERING ORDER BY (transaction_at DESC, userid ASC)
     AND bloom_filter_fp_chance = 0.01
     AND caching = {'keys': 'ALL', 'rows_per_partition': 'NONE'}
     AND comment = ''
@@ -253,6 +279,7 @@ CREATE TABLE killrvideo.buy_product (
     AND min_index_interval = 128
     AND read_repair_chance = 0.0
     AND speculative_retry = '99PERCENTILE';
+
 ```
 
 ### 1.4 Run python file
