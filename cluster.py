@@ -101,7 +101,7 @@ def add_product(userid):
     title = str(input('Enter the Product name = '))
     description = str(input('Enter the Product Description = '))
     cost = str(float(input('Enter the Cost of the product = ')))
-    discount = str(float(input('Enter the Cost of the product = ')))
+    discount = str(float(input('Enter the Discount of the product = ')))
     year_added = str(int(input('Enter the year = ')))
     isavailable = str(bool(input('Is the product available? Reply True or False..')))
     stockleft = str(int(input('Enter Number of Stocks Left = ')))
