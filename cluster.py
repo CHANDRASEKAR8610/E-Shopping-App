@@ -297,7 +297,8 @@ def sales(userid):
 
 
 def loop():
-    print('**********************Electronics Shopping plaza*********************')
+    print(" ")
+    print('**********************E-Shopiing-App*********************')
 
     print('Click 1 to view to view Latest Products')
     print('Else, Click 0 to Register or Authenticate.')
